@@ -1,0 +1,8 @@
+<?php
+/** @var \Perspective\ErsteViewModule\Block\Template $block */
+
+echo "<h1>Erste View Module</h1>";
+echo $block->getData('customtext');
+echo $this->getLayout()->getBlock('product.info.overview')->getData('title');
+
+?>
