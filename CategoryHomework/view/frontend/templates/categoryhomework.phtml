@@ -1,0 +1,19 @@
+<?php
+/** @var \Perspective\CategoryHomework\Block\Template $block */
+$viewModel = $block->getViewModel();
+
+//var_dump($viewModel->getCustomerCollection());
+$categoryList = $viewModel ->getAllSystemCategory();
+
+echo("<b>Category:</b> ");
+
+foreach ($categoryList as $category){
+    echo($category->getName()."; ");
+    }
+    echo("<hr>");
+
+foreach ($categoryList as $category){    
+    var_dump($category->getData());
+    }
+
+?>

@@ -1,0 +1,10 @@
+<?php
+/** @var \Perspective\SimpleProductHomework\Block\Template $block */
+$viewModel = $block->getViewModel();
+//echo var_dump ($viewModel->getCustomerCollection());
+foreach ($viewModel->getCustomer() AS $customer) {
+    echo "<b>Имя: </b>" . $customer->getFirstname()."<br/>";
+    echo "<b>Фамилия: </b>" . $customer->getLastname()."<br/>";
+    echo "<b>Email: </b>" . $customer->getEmail()."<br/>";
+}
+?>

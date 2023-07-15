@@ -1,0 +1,12 @@
+<?php
+/** @var \Perspective\SimpleProductHomework\Block\Template $block */
+$viewModel = $block->getViewModel();
+?>
+<?php foreach ($viewModel->getSimpleProducts() as $Letter) : ?>
+
+    <h2> <?= $Letter->getName(); ?> </h2>
+    <h3>  <?= $Letter->getPrice(); ?> </h3>
+
+<?php endforeach; ?>
+
+
